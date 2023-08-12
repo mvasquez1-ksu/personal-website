@@ -1,0 +1,16 @@
+.header {
+    background-color: #E63946;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    background-color: transparent;
+}
+
+.site-subtitle {
+    text-align: center;
+}
+
+h2 {
+    font-size: 45px;
+    
+}
