@@ -3,4 +3,5 @@ export interface Project {
     name: string;
     summary?: string;
     techstack?: string;
+    cover_image_path: string;
 }

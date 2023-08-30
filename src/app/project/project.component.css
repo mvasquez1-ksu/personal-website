@@ -3,6 +3,28 @@
     background-color: #345995;
     padding: 1% 1%;
     margin: 1% 1%;
-    height: 20vh;
-    width: 50%;
+    height: 25vh;
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+    transition: background-color 1s;
+    transition: width 1s;
 }
+
+.box:hover {
+    background-color: black;
+    width: 70%;
+} 
+
+.project-info {
+    display: grid;
+}
+
+.img {
+    max-width: 25vh;
+    height: auto;
+    border-radius: 10px;
+}
+
+
+
