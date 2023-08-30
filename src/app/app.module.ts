@@ -12,6 +12,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { ProjectService } from './project.service';
 import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
 import { ExperienceComponent } from './experience/experience.component';
+import { EducationComponent } from './education/education.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { ExperienceComponent } from './experience/experience.component';
     NavComponent,
     HeaderComponent,
     ProjectComponent,
-    ExperienceComponent
+    ExperienceComponent,
+    EducationComponent
   ],
   imports: [
     BrowserModule,

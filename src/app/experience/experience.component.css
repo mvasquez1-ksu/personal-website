@@ -1,0 +1,45 @@
+.box {
+    color: #F7F7F7;
+    background-color: #345995;
+    padding: 1% 1%;
+    margin: 1% 1%;
+    height: 12vh;
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+    transition: background-color 1s, width 1s, height 1s;
+    border-radius: 10px;
+    overflow: hidden;
+
+}
+
+.box:hover {
+    background-color: black;
+    width: 70%;
+    height: 30vh;
+} 
+
+.experience-info {
+    display: grid;
+    padding-right: 10%;
+}
+
+.img {
+    max-width: 25vh;
+    height: auto;
+    border-radius: 10px;
+    display: block;
+}
+
+.experience-details {
+    opacity: 0%;
+    max-height: 0%;
+    background-color: aqua;
+    max-height: 0%;
+    transition: opacity 1s ease-in-out;
+}
+
+.box:hover .experience-details {
+    opacity: 100%;
+}
+

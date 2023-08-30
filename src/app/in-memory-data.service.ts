@@ -18,9 +18,9 @@ export class InMemoryDataService implements InMemoryDbService {
       },
       {
         id:2,
-        name: 'Project Name',
+        name: 'Personal Website',
         summary: 'Project Summary',
-        techstack: 'Project Tech Stack',
+        techstack: 'Angular, TypeScript',
         cover_image_path: '/assets/img/quictionary-cover-image.png'
       }
   ];

@@ -3,21 +3,21 @@
     background-color: #345995;
     padding: 1% 1%;
     margin: 1% 1%;
-    height: 25vh;
+    height: 15vh;
     width: 40%;
     display: flex;
     justify-content: space-between;
-    transition: background-color 1s;
-    transition: width 1s;
+    transition: background-color 1s, width 1s, height 1s;
     border-radius: 10px;
 }
 
 .box:hover {
     background-color: black;
     width: 70%;
+    height: 30vh;
 } 
 
-.project-info {
+.education-info {
     display: grid;
 }
 
@@ -27,5 +27,14 @@
     border-radius: 10px;
 }
 
+.education-details {
+    opacity: 0%;
+    max-height: 0%;
+    background-color: aqua;
+    max-height: 0%;
+    transition: opacity 1s ease-in-out;
+}
 
-
+.box:hover .education-details {
+    opacity: 100%;
+}
