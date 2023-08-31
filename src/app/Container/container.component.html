@@ -1,18 +1,26 @@
 <div class="wrapper">
     <app-nav></app-nav>
     <app-header></app-header>
-    <div class="section-header">
-        <h2>Projects</h2>
+    <div class="content-wrapper">
+        <div class="content-container">
+            <div class="section-header">
+                <h2>Projects</h2>
+            </div>
+            <div *ngFor="let data of projects">
+                <app-project [proj]="data"></app-project>
+            </div>
+        </div>
+        <div class="content-container">
+            <div class="section-header">
+                <h2>Experience</h2>
+            </div>
+            <app-experience></app-experience>
+        </div>
+        <div class="content-container">
+            <div class="section-header">
+                <h2>Education</h2>
+            </div>
+            <app-education></app-education>
+        </div>
     </div>
-    <div *ngFor="let data of projects">
-        <app-project [proj]="data"></app-project>
-    </div>
-    <div class="section-header">
-        <h2>Experience</h2>
-    </div>
-    <app-experience></app-experience>
-    <div class="section-header">
-        <h2>Education</h2>
-    </div>
-    <app-education></app-education>
 </div>

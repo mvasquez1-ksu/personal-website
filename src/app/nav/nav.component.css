@@ -2,13 +2,13 @@
     display: flex;
     height: 15vh;
     width: 100%;
+    color: #F4F7F5;
 }
 
 .site-name {
     width: 50%;
     margin: 0;
     font-size: 3vh;
-    color: black;
     align-items: center;
     justify-content: center;
     text-align: left;
@@ -26,6 +26,6 @@
 
 a {
     text-decoration: none;
-    color: black;
     margin: 0px 10px;
+    color: #F4F7F5;
 }

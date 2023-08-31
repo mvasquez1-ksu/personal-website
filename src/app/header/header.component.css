@@ -1,9 +1,9 @@
 .header {
-    background-color: #E63946;
     height: 20vh;
     display: flex;
     justify-content: center;
     background-color: transparent;
+    color: #F4F7F5;
 }
 
 .site-subtitle {
