@@ -1,6 +1,5 @@
 .navbar {
-    display: flex;
-    height: 15vh;
+    height: 100vh;
     width: 100%;
     color: #F4F7F5;
 }
@@ -9,23 +8,38 @@
     width: 50%;
     margin: 0;
     font-size: 3vh;
-    align-items: center;
-    justify-content: center;
+    align-items: left;
+    justify-content: left;
     text-align: left;
     line-height: 15vh;
     padding-left: 1%;
+    display: block;
 }
 
 .site-menu {
     font-size: 1vw;
-    width: 50%;
-    padding-right: 1%;
-    text-align: right;
+    width: 100%;
+    padding-left: 1%;
+    text-align: left;
     line-height: 15vh;
+    display: grid;
 }
 
-a {
+.site-menu a {
     text-decoration: none;
     margin: 0px 10px;
     color: #F4F7F5;
+    height: 15vh;
+    border-radius: 10px;
+    background-color: #2B3A67;
+    padding-left: 1%;
+    margin: .5% 0%;
+    width: 20%;
+    font-size: 2vw;
+    transition: font-size 0.5s, width 1s;
+}
+
+.site-menu a:hover {
+    font-size: 2.5vw;
+    width: 30%;
 }
