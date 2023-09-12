@@ -3,11 +3,11 @@
     background-color: #F4F7F5;
     padding: 1% 1%;
     margin: 1% 1%;
-    height: 12vh;
-    width: 70%;
+    max-height: 12vh;
+    max-width: 70%;
     display: flex;
     justify-content: space-between;
-    transition: background-color 1s, color 1s, width 1s, height 1s;
+    transition: background-color 1s, color 1s, max-width 1s, max-height 1s;
     border-radius: 10px;
     overflow: hidden;
 
@@ -15,8 +15,8 @@
 
 .box:hover {
     background-color: black;
-    width: 90%;
-    height: 30vh;
+    max-width: 95%;
+    max-height: 50vh;
     color: #F4F7F5;
 } 
 

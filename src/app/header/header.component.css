@@ -1,9 +1,20 @@
 .header {
-    height: 20vh;
+    height: 15vh;
     display: flex;
-    justify-content: center;
     background-color: transparent;
     color: #F4F7F5;
+}
+
+.site-name {
+    width: 50%;
+    margin: 0;
+    font-size: 3vh;
+    align-items: left;
+    justify-content: left;
+    text-align: left;
+    line-height: 15vh;
+    padding-left: 1%;
+    display: block;
 }
 
 .site-subtitle {

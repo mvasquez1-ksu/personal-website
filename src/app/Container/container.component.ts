@@ -1,6 +1,7 @@
 import { Component, OnInit } from "@angular/core";
 import { ProjectService } from "../project.service";
 import { Project } from "../project";
+import { NavService } from "../nav.service";
 
 @Component({
     selector: 'app-container',
@@ -10,7 +11,7 @@ import { Project } from "../project";
 export class ContainerComponent implements OnInit {
     projects: Project[] = [];
 
-    constructor(private projectService: ProjectService) { }
+    constructor(private projectService: ProjectService, private navService: NavService) { }
 
     ngOnInit(): void {
       this.getProjects();
@@ -18,6 +19,10 @@ export class ContainerComponent implements OnInit {
 
     getProjects(): void {
       this.projectService.getProjects().subscribe(projects => this.projects = projects);
+    }
+
+    get activeNavItem() {
+      return this.navService.activeNavItem;
     }
 
 

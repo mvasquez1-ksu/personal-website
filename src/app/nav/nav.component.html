@@ -1,11 +1,11 @@
 <div class="navbar">
-    <div class="site-name">
-        <h2>Marco Vasquez</h2>
-    </div>
     <div class="site-menu">
-        <a href="#" id="projects" (click)="openmenu('projects')">Projects</a>
+        <ng-container *ngFor="let navItem of navItems">
+            <a href="#" id="{{navItem.toLowerCase()}}" (click)="toggle(navItem)">{{navItem}}</a>
+        </ng-container>
+<!--         <a href="#" id="projects" (click)="openmenu('projects')">Projects</a>
         <a href="#" id="experience" (click)="openmenu('experience')">Experience</a>
-        <a href="#">Education</a>
-        <a href="#">Contact</a>
+        <a href="#" id="education" (click)="openmenu('education')">Education</a>
+        <a href="#" id="contact" (click)="openmenu('contact')">Contact</a> -->
     </div>
 </div>

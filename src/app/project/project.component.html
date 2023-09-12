@@ -1,8 +1,10 @@
 <div class="box">
     <div class="project-info">
         <h2>{{proj.name}}</h2>
-        <p>Summary: {{proj.summary}}</p>
-        <p>Tech Stack: {{proj.techstack}}</p>
+        <p>{{proj.techstack}}</p>
+        <div class="project-details">
+            <p>{{proj.summary}}</p>
+        </div>
     </div>
     <div class="img_box">
         <img class="img" src={{proj.cover_image_path}}>

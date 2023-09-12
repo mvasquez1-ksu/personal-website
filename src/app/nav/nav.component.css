@@ -34,12 +34,18 @@
     background-color: #2B3A67;
     padding-left: 1%;
     margin: .5% 0%;
-    width: 20%;
+    width: 40%;
     font-size: 2vw;
     transition: font-size 0.5s, width 1s;
 }
 
 .site-menu a:hover {
     font-size: 2.5vw;
-    width: 30%;
+    width: 50%;
 }
+
+.site-menu a.active {
+    width: 80%;
+    font-size: 2.5vw;
+}
+  
