@@ -3,26 +3,39 @@
     background-color: #F4F7F5;
     padding: 1% 1%;
     margin: 1% 1%;
-    max-height: 12vh;
+    max-height: 15vh;
     max-width: 70%;
     display: flex;
     justify-content: space-between;
-    transition: background-color 1s, color 1s, max-width 1s, max-height 1s;
-    border-radius: 10px;
+    transition: max-width 1s, max-height 1s;
     overflow: hidden;
 
 }
 
 .box:hover {
-    background-color: black;
     max-width: 95%;
     max-height: 50vh;
-    color: #F4F7F5;
 } 
+
+.box p {
+    font-size: 2vh;
+    padding: 1%;
+}
+
+.box h2 {
+    font-size: 3vh;
+    padding: 1%;
+}
+
+.box h4 {
+    font-size: 2vh;
+    padding: 1%;
+}
 
 .experience-info {
     display: grid;
     padding-right: 10%;
+    margin-left: 1%;
 }
 
 .img {
@@ -38,6 +51,7 @@
     background-color: aqua;
     max-height: 0%;
     transition: opacity 1s ease-in-out;
+    margin-left: 2%;
 }
 
 .box:hover .experience-details {

@@ -13,6 +13,7 @@ import { ProjectService } from './project.service';
 import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
 import { ExperienceComponent } from './experience/experience.component';
 import { EducationComponent } from './education/education.component';
+import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { EducationComponent } from './education/education.component';
     HeaderComponent,
     ProjectComponent,
     ExperienceComponent,
-    EducationComponent
+    EducationComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,

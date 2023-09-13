@@ -4,17 +4,16 @@
 
 .content-wrapper {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 2fr;
 }
 
 .content-container {
     width: 100%;
-    display: inline-block;
     grid-column: 2;
 }
 
 .section-header {
-    font-size: 25px;
+    font-size: 30px;
     margin-left: 1%;
     color: #F4F7F5;
 }

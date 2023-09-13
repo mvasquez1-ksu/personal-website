@@ -3,10 +3,36 @@
     margin: 0px 0px;
     padding: 0px 0px;
     box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: Noir, Segoe UI, Tahoma, Geneva, Verdana, sans-serif;
 }
 
 html {
     /* background-color: #595F72; */
-    background-color: #517664;
+    /* background-color: #517664; */
+    background-color: #1a5e63;
+}
+
+@font-face {
+    font-family: 'Koliko';
+    src: url('/assets/fonts/koliko-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Koliko Light';
+    src: url('/assets/fonts/koliko-Light.ttf');
+}
+
+@font-face {
+    font-family: 'Koliko Bold';
+    src: url('/assets/fonts/koliko-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'Noir';
+    src: url('/assets/fonts/Noir_regular.otf');
+}
+
+@font-face {
+    font-family: 'Noir Medium';
+    src: url('/assets/fonts/Noir_medium.otf');
 }
