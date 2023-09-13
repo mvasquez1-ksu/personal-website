@@ -10,4 +10,10 @@ export class ProjectComponent {
 
   @Input() proj!: Project
 
+  openLink(project: Project) {
+    if (project.link) {
+      window.open(project.link, "_blank");
+    }
+  }
+
 }

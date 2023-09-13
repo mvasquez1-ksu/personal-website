@@ -7,9 +7,14 @@ export class NavService {
 
   constructor() { }
 
-  activeNavItem: string | null = null;
+  activeNavItem?: string | null = null;
 
-  setActiveNavItem(navItem: string) {
-    this.activeNavItem = navItem;
+  setActiveNavItem(navItem?: string) {
+    if (navItem) {
+      this.activeNavItem = navItem;
+    }
+    else {
+      this.activeNavItem = void 0;
+    }
   }
 }

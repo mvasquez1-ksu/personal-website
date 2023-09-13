@@ -1,14 +1,10 @@
 <div class="navbar">
     <div class="site-menu">
         <ng-container *ngFor="let navItem of navItems">
-            <span [class.active]="isActive(navItem)" class="navButton-wrap">
+            <span [class.active]="isActive(navItem)" class="navButton-wrap" >
                 <a href="#" id="{{navItem.toLowerCase()}}" (click)="toggle(navItem)">{{navItem}}</a>
             </span>
 
         </ng-container>
-<!--         <a href="#" id="projects" (click)="openmenu('projects')">Projects</a>
-        <a href="#" id="experience" (click)="openmenu('experience')">Experience</a>
-        <a href="#" id="education" (click)="openmenu('education')">Education</a>
-        <a href="#" id="contact" (click)="openmenu('contact')">Contact</a> -->
     </div>
 </div>
