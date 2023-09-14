@@ -2,7 +2,7 @@
     <div class="site-menu">
         <ng-container *ngFor="let navItem of navItems">
             <span [class.active]="isActive(navItem)" class="navButton-wrap" >
-                <a href="#" id="{{navItem.toLowerCase()}}" (click)="toggle(navItem)">{{navItem}}</a>
+                <a href="#{{navItem.toLowerCase()}}" id="{{navItem.toLowerCase()}}" (click)="toggle(navItem)">{{navItem}}</a>
             </span>
 
         </ng-container>
