@@ -14,25 +14,25 @@ html {
 
 @font-face {
     font-family: 'Koliko';
-    src: url('/assets/fonts/koliko-Regular.ttf');
+    src: url('assets/fonts/koliko-Regular.ttf');
 }
 
 @font-face {
     font-family: 'Koliko Light';
-    src: url('/assets/fonts/koliko-Light.ttf');
+    src: url('assets/fonts/koliko-Light.ttf');
 }
 
 @font-face {
     font-family: 'Koliko Bold';
-    src: url('/assets/fonts/koliko-Bold.ttf');
+    src: url('assets/fonts/koliko-Bold.ttf');
 }
 
 @font-face {
     font-family: 'Noir';
-    src: url('/assets/fonts/Noir_regular.otf');
+    src: url('assets/fonts/Noir_regular.otf');
 }
 
 @font-face {
     font-family: 'Noir Medium';
-    src: url('/assets/fonts/Noir_medium.otf');
+    src: url('assets/fonts/Noir_medium.otf');
 }
