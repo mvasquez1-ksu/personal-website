@@ -12,19 +12,19 @@ export class ContactComponent {
       media: 'Email',
       username: 'mvasquez1@ksu.edu',
       link: 'mailto:mvasquez1@ksu.edu',
-      image_path: '/assets/img/email-icon.png'
+      image_path: 'assets/img/email-icon.png'
     },
     {
       media: 'LinkedIn',
       username: 'Marco Vasquez',
       link: 'https://www.linkedin.com/in/marco-vasquez-99673521b',
-      image_path: '/assets/img/linkedin-icon.png'
+      image_path: 'assets/img/linkedin-icon.png'
     },
     {
       media: 'GitHub',
       username: 'mvasquez1-ksu',
       link: 'https://github.com/mvasquez1-ksu',
-      image_path: '/assets/img/github-icon.png'
+      image_path: 'assets/img/github-icon.png'
     }
   ];
 
