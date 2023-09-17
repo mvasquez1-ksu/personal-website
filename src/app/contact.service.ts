@@ -1,20 +1,24 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Project } from './project';
+import { Contact } from './contact';
 import { Observable, catchError, of, tap } from 'rxjs';
 
 @Injectable({
   providedIn: 'root',
 })
-export class ProjectService {
-  private projectsUrl = 'api/projects';
+export class ContactService {
+  private contactMethodsUrl = 'api/contactMethods';
 
   constructor(private http: HttpClient) {}
 
-  getProjects(): Observable<Project[]> {
+  getContactMethods(): Observable<Contact[]> {
     return this.http
-      .get<Project[]>(this.projectsUrl)
-      .pipe(tap(), catchError(this.handleError<Project[]>('getProjects', [])));
+      .get<Contact[]>(this.contactMethodsUrl)
+      .pipe(
+        tap(),
+        catchError(this.handleError<Contact[]>('getContactMethods', []))
+      );
   }
 
   private handleError<T>(operation = 'operation', result?: T) {

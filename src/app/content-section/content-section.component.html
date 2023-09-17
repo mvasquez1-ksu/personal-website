@@ -1,0 +1,17 @@
+<div class="section">
+  <h2 class="section-header">{{ header }}</h2>
+  <div class="box" *ngFor="let content of content">
+    <div class="info" (click)="openLink(content)">
+      <h2>{{ content.title }}</h2>
+      <h4 *ngIf="content.subtitle">{{ content.subtitle }}</h4>
+      <h4 *ngIf="content.date">{{ content.date }}</h4>
+      <p *ngIf="content.location">{{ content.location }}</p>
+      <div class="details" *ngFor="let detail of content.details">
+        <p>{{ detail }}</p>
+      </div>
+    </div>
+    <div class="img_box">
+      <img class="img" src="{{ content.imagePath }}" />
+    </div>
+  </div>
+</div>

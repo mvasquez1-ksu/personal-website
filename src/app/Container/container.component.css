@@ -1,19 +1,13 @@
 .wrapper {
-    margin: 0 auto;
+  margin: 0 auto;
 }
 
 .content-wrapper {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
 }
 
 .content-container {
-    width: 100%;
-    grid-column: 2;
-}
-
-.section-header {
-    font-size: 30px;
-    margin-left: 1%;
-    color: #F4F7F5;
+  width: 100%;
+  grid-column: 2;
 }

@@ -1,20 +1,21 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Project } from './project';
+import { Content } from './content';
 import { Observable, catchError, of, tap } from 'rxjs';
 
 @Injectable({
   providedIn: 'root',
 })
-export class ProjectService {
-  private projectsUrl = 'api/projects';
+export class ContentService {
+  private contentUrl = 'api/content';
 
   constructor(private http: HttpClient) {}
 
-  getProjects(): Observable<Project[]> {
+  getContent(): Observable<Content[]> {
     return this.http
-      .get<Project[]>(this.projectsUrl)
-      .pipe(tap(), catchError(this.handleError<Project[]>('getProjects', [])));
+      .get<Content[]>(this.contentUrl)
+      .pipe(tap(), catchError(this.handleError<Content[]>('getContent', [])));
   }
 
   private handleError<T>(operation = 'operation', result?: T) {
