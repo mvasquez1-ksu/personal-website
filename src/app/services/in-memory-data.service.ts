@@ -12,7 +12,7 @@ export class InMemoryDataService implements InMemoryDbService {
         title: 'Quictionary',
         subtitle: 'Swift, Core Data',
         details: [
-          'Quictionary is a powerful flashcard study tool and a multilingual dictionary combined into one application to allow for quick and easy studying. Quictionary uses a spaced repetition algorithm to assign users daily review sessions. The users can also create study lists to personalize their reviews. This application is meant to act as a companion app to allow language learners to engage with many types of content in their target language while pulling words and phrases to study in Quictionary. This application is being developed for iOS using SwiftUI and Core Data.',
+          'Quictionary is a powerful flashcard study tool and a multilingual dictionary combined into one application to allow for quick and easy studying, developed for iOS using SwiftUI and Core Data.',
         ],
         link: 'https://github.com/mvasquez1-ksu/quictionary',
         imagePath: 'assets/img/quictionary-cover-image.png',
@@ -25,7 +25,7 @@ export class InMemoryDataService implements InMemoryDbService {
           'This is the website you are browsing right now! I built this using Angular. This website serves as the home to all of my projects, work experience, education info, and more.',
         ],
         link: 'https://github.com/mvasquez1-ksu/personal-website',
-        imagePath: 'assets/img/quictionary-cover-image.png',
+        imagePath: 'assets/img/personal-website-cover-image.png',
       },
       {
         contentTag: 'Experience',
