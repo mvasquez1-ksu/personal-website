@@ -37,7 +37,10 @@
       *ngIf="activeNavItem == 'Contact'"
       [@fadeInOut]
     >
-      <app-contact [contactMethods]="contactMethods"></app-contact>
+      <app-contact
+        [header]="activeNavItem"
+        [contactMethods]="contactMethods"
+      ></app-contact>
     </div>
   </div>
 </div>

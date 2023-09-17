@@ -1,5 +1,5 @@
 import { Component, Input, ViewChild, AfterViewInit } from '@angular/core';
-import { NavService } from '../nav.service';
+import { NavService } from '../../services/nav.service';
 
 @Component({
   selector: 'app-nav',

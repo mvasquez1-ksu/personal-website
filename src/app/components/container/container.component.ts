@@ -1,8 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { ProjectService } from '../project.service';
-import { Project } from '../project';
-import { Content } from '../content';
-import { NavService } from '../nav.service';
+import { Content } from '../../models/content';
+import { NavService } from '../../services/nav.service';
 import {
   trigger,
   state,
@@ -10,9 +8,9 @@ import {
   animate,
   transition,
 } from '@angular/animations';
-import { ContentService } from '../content.service';
-import { ContactService } from '../contact.service';
-import { Contact } from '../contact';
+import { ContentService } from '../../services/content.service';
+import { ContactService } from '../../services/contact.service';
+import { Contact } from '../../models/contact';
 
 @Component({
   selector: 'app-container',
@@ -38,29 +36,20 @@ import { Contact } from '../contact';
   ],
 })
 export class ContainerComponent implements OnInit {
-  projects: Project[] = [];
   content: Content[] = [];
   contactMethods: Contact[] = [];
   navItems: string[] = [];
 
   constructor(
-    private projectService: ProjectService,
     private navService: NavService,
     private contentService: ContentService,
     private contactService: ContactService
   ) {}
 
   ngOnInit(): void {
-    this.getProjects();
     this.getContent();
     this.getContactMethods();
     this.getNavItems();
-  }
-
-  getProjects(): void {
-    this.projectService
-      .getProjects()
-      .subscribe((projects) => (this.projects = projects));
   }
 
   getContactMethods(): void {

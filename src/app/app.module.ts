@@ -4,21 +4,17 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { ContainerComponent } from './Container/container.component';
-import { NavComponent } from './nav/nav.component';
-import { HeaderComponent } from './header/header.component';
-import { InMemoryDataService } from './in-memory-data.service';
-import { ProjectComponent } from './project/project.component';
+import { ContainerComponent } from './components/container/container.component';
+import { NavComponent } from './components/nav/nav.component';
+import { HeaderComponent } from './components/header/header.component';
+import { InMemoryDataService } from './services/in-memory-data.service';
 import { HttpClientModule } from '@angular/common/http';
-import { ProjectService } from './project.service';
-import { ContentService } from './content.service';
+import { ContentService } from './services/content.service';
 import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
-import { ExperienceComponent } from './experience/experience.component';
-import { EducationComponent } from './education/education.component';
-import { ContactComponent } from './contact/contact.component';
-import { ContentSectionComponent } from './content-section/content-section.component';
-import { ContactService } from './contact.service';
-import { NavService } from './nav.service';
+import { ContactComponent } from './components/contact/contact.component';
+import { ContentSectionComponent } from './components/content-section/content-section.component';
+import { ContactService } from './services/contact.service';
+import { NavService } from './services/nav.service';
 
 @NgModule({
   declarations: [
@@ -26,9 +22,6 @@ import { NavService } from './nav.service';
     ContainerComponent,
     NavComponent,
     HeaderComponent,
-    ProjectComponent,
-    ExperienceComponent,
-    EducationComponent,
     ContactComponent,
     ContentSectionComponent,
   ],

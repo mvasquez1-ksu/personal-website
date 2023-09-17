@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { Contact } from '../contact';
+import { Contact } from '../../models/contact';
 
 @Component({
   selector: 'app-contact',
@@ -7,6 +7,7 @@ import { Contact } from '../contact';
   styleUrls: ['./contact.component.css'],
 })
 export class ContactComponent {
+  @Input() header?: string;
   @Input() contactMethods?: Contact[];
 
   openLink(contact: Contact) {
