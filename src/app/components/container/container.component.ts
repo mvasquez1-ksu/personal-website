@@ -1,16 +1,16 @@
-import { Component, OnInit } from '@angular/core';
-import { Content } from '../../models/content';
-import { NavService } from '../../services/nav.service';
 import {
-  trigger,
+  animate,
   state,
   style,
-  animate,
   transition,
+  trigger,
 } from '@angular/animations';
-import { ContentService } from '../../services/content.service';
-import { ContactService } from '../../services/contact.service';
+import { Component, OnInit } from '@angular/core';
 import { Contact } from '../../models/contact';
+import { Content } from '../../models/content';
+import { ContactService } from '../../services/contact.service';
+import { ContentService } from '../../services/content.service';
+import { NavService } from '../../services/nav.service';
 
 @Component({
   selector: 'app-container',
