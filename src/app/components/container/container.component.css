@@ -1,0 +1,13 @@
+.wrapper {
+  margin: 0 auto;
+}
+
+.content-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+.content-container {
+  width: 100%;
+  grid-column: 2;
+}

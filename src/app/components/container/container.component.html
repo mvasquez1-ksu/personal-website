@@ -1,0 +1,46 @@
+<div class="wrapper">
+  <app-header></app-header>
+  <div class="content-wrapper">
+    <app-nav [navItems]="navItems"></app-nav>
+    <div
+      class="content-container"
+      *ngIf="activeNavItem == 'Projects'"
+      [@fadeInOut]
+    >
+      <app-content-section
+        [header]="activeNavItem"
+        [content]="getSectionContent()"
+      ></app-content-section>
+    </div>
+    <div
+      class="content-container"
+      *ngIf="activeNavItem == 'Experience'"
+      [@fadeInOut]
+    >
+      <app-content-section
+        [header]="activeNavItem"
+        [content]="getSectionContent()"
+      ></app-content-section>
+    </div>
+    <div
+      class="content-container"
+      *ngIf="activeNavItem == 'Education'"
+      [@fadeInOut]
+    >
+      <app-content-section
+        [header]="activeNavItem"
+        [content]="getSectionContent()"
+      ></app-content-section>
+    </div>
+    <div
+      class="content-container"
+      *ngIf="activeNavItem == 'Contact'"
+      [@fadeInOut]
+    >
+      <app-contact
+        [header]="activeNavItem"
+        [contactMethods]="contactMethods"
+      ></app-contact>
+    </div>
+  </div>
+</div>
